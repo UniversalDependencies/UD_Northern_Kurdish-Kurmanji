@@ -1,11 +1,11 @@
 # Summary
 
-The UD Kurmanji corpus is a corpus of Kurmanji Kurdish. It contains fiction and encyclopaedic texts in
+The treebank is a corpus of Kurmanji Kurdish. It contains fiction and encyclopaedic texts in
 roughly equal measure. It has been annotated natively in accordance with the UD annotation scheme.
 
 # Introduction
 
-UD Kurmanji is a Kurmanji (Northern Kurdish) treebank developed with the UD framework. It consists of a Sherlock Holmes story, "The Adventure of the Speckled Band", translated in 1944 by Celadet Bedirxan in the magazine Ronahi, and sentences from the Kurmanji Wikipedia.
+This is a Kurmanji (Northern Kurdish) treebank developed with the UD framework. It consists of a Sherlock Holmes story, "The Adventure of the Speckled Band", translated in 1944 by Celadet Bedirxan in the magazine Ronahi, and sentences from the Kurmanji Wikipedia.
 
 # Acknowledgments
 
@@ -21,6 +21,8 @@ If you use this treebank in your work, please cite:
 
 # Changelog
 
+* 2025-11-15 v2.17
+  * Repository renamed from UD_Kurmanji-MG to UD_Northern_Kurdish-Kurmanji.
 * 2022-11-15 v2.11
   * Fixed validation errors.
 * 2021-05-15 v2.8
