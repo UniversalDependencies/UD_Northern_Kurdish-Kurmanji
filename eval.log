@@ -1,11 +1,15 @@
 Running the following version of UD tools:
-commit ecbbdff44b15c9b6de4a691e3499c1286459ab2e
+commit 26e6c87a2f518322d15901a351199b6be6569062
 Author: Dan Zeman <zeman@ufal.mff.cuni.cz>
-Date:   Fri May 9 21:07:42 2025 +0200
-Evaluating the following revision of UD_Kurmanji-MG:
-commit a58a48e67e97a5dd5088d31e6ed661f3f928b7c9
+Date:   Fri Nov 7 15:39:58 2025 +0100
+Evaluating the following revision of UD_Northern_Kurdish-Kurmanji:
+commit 2f56eaf948c481c370d802880f490d2523a7ea04
+Merge: 0dad7c3 438e490
 Author: Dan Zeman <zeman@ufal.mff.cuni.cz>
-Date:   Mon Nov 11 16:07:30 2024 +0100
+CoNLL-U data file regular expression = '(.+)-ud-(train|dev|test)\.conllu'
+Language-treebank code (from CoNLL-U file name) = 'kmr_kurmanji'
+Language code (from CoNLL-U file name) = 'kmr'
+Found the following data files: kmr_kurmanji-ud-test.conllu, kmr_kurmanji-ud-train.conllu
 Size: counted 10259 of 10259 words (nodes).
 Size: min(0, log((N/1000)**2)) = 4.65631073821115.
 Size: maximum value 13.815511 is for 1000000 words or more.
@@ -19,55 +23,50 @@ Features: 7851 out of 10259 total words have one or more features.
 Features: source of annotation (from README) factor is 0.8.
 Universal relations: 30 out of 37 found in the corpus.
 Universal relations: source of annotation (from README) factor is 1.
-Udapi:
-               TOTAL          4
-Udapi: found 4 bugs.
-Udapi: worst expected case (threshold) is one bug per 10 words. There are 10259 words.
 Genres: found 2 out of 18 known.
-/net/work/people/zeman/unidep/tools/validate.py --lang kmr --max-err=10 UD_Kurmanji-MG/kmr_mg-ud-test.conllu
-[Line 42 Sent sherlock:sherlock01.vislcg.txt:4:54 Node 5]: [L3 Warning fixed-without-extpos] Fixed expression 'li ber' does not have the 'ExtPos' feature
-[Line 53 Sent sherlock:sherlock01.vislcg.txt:4:54 Node 16]: [L3 Warning fixed-without-extpos] Fixed expression 'li ser' does not have the 'ExtPos' feature
-[Line 296 Sent sherlock:sherlock01.vislcg.txt:19:481 Node 5]: [L3 Warning fixed-without-extpos] Fixed expression 'ji ber' does not have the 'ExtPos' feature
-[Line 306 Sent sherlock:sherlock01.vislcg.txt:20:500 Node 3]: [L3 Warning fixed-without-extpos] Fixed expression 'ji ber' does not have the 'ExtPos' feature
-[Line 314 Sent sherlock:sherlock01.vislcg.txt:21:513 Node 2]: [L3 Warning fixed-without-extpos] Fixed expression 'Ji ber' does not have the 'ExtPos' feature
-[Line 332 Sent sherlock:sherlock01.vislcg.txt:22:524 Node 12]: [L3 Warning fixed-without-extpos] Fixed expression 'ji ber' does not have the 'ExtPos' feature
-[Line 410 Sent sherlock:sherlock01.vislcg.txt:25:672 Node 9]: [L3 Syntax leaf-det] 'det' not expected to have children (9:çi:det --> 7:ez:nsubj)
-[Line 451 Sent sherlock:sherlock01.vislcg.txt:26:719 Node 20]: [L3 Warning fixed-without-extpos] Fixed expression 'ji bin' does not have the 'ExtPos' feature
-[Line 518 Sent sherlock:sherlock02.vislcg.txt:3:49 Node 1]: [L3 Warning fixed-without-extpos] Fixed expression 'Bi tenê' does not have the 'ExtPos' feature
-[Line 518 Sent sherlock:sherlock02.vislcg.txt:3:49 Node 1]: [L3 Syntax rel-upos-advmod] 'advmod' should be 'ADV' but it is 'ADP' word 'Bi'
-[Line 543 Sent sherlock:sherlock02.vislcg.txt:3:49 Node 26]: [L3 Warning fixed-without-extpos] Fixed expression 'ji bîr' does not have the 'ExtPos' feature
-[Line 678 Sent sherlock:sherlock02.vislcg.txt:12:309 Node 4]: [L3 Warning fixed-without-extpos] Fixed expression 'di bin' does not have the 'ExtPos' feature
+/net/work/people/zeman/unidep/tools/validate.py --lang kmr --max-err=10 UD_Northern_Kurdish-Kurmanji/kmr_kurmanji-ud-test.conllu
+[Line 42 Sent sherlock:sherlock01.vislcg.txt:4:54]: [L3 Warning fixed-without-extpos] Fixed expression 'li ber' does not have the 'ExtPos' feature
+[Line 53 Sent sherlock:sherlock01.vislcg.txt:4:54]: [L3 Warning fixed-without-extpos] Fixed expression 'li ser' does not have the 'ExtPos' feature
+[Line 296 Sent sherlock:sherlock01.vislcg.txt:19:481]: [L3 Warning fixed-without-extpos] Fixed expression 'ji ber' does not have the 'ExtPos' feature
+[Line 306 Sent sherlock:sherlock01.vislcg.txt:20:500]: [L3 Warning fixed-without-extpos] Fixed expression 'ji ber' does not have the 'ExtPos' feature
+[Line 314 Sent sherlock:sherlock01.vislcg.txt:21:513]: [L3 Warning fixed-without-extpos] Fixed expression 'Ji ber' does not have the 'ExtPos' feature
+[Line 332 Sent sherlock:sherlock01.vislcg.txt:22:524]: [L3 Warning fixed-without-extpos] Fixed expression 'ji ber' does not have the 'ExtPos' feature
+[Line 410 Sent sherlock:sherlock01.vislcg.txt:25:672]: [L3 Syntax leaf-det] 'det' not expected to have children (9:çi:det --> 7:ez:nsubj)
+[Line 451 Sent sherlock:sherlock01.vislcg.txt:26:719]: [L3 Warning fixed-without-extpos] Fixed expression 'ji bin' does not have the 'ExtPos' feature
+[Line 518 Sent sherlock:sherlock02.vislcg.txt:3:49]: [L3 Warning fixed-without-extpos] Fixed expression 'Bi tenê' does not have the 'ExtPos' feature
+[Line 518 Sent sherlock:sherlock02.vislcg.txt:3:49]: [L3 Syntax rel-upos-advmod] 'advmod' should be 'ADV' but it is 'ADP' ('Bi')
+[Line 543 Sent sherlock:sherlock02.vislcg.txt:3:49]: [L3 Warning fixed-without-extpos] Fixed expression 'ji bîr' does not have the 'ExtPos' feature
+[Line 678 Sent sherlock:sherlock02.vislcg.txt:12:309]: [L3 Warning fixed-without-extpos] Fixed expression 'di bin' does not have the 'ExtPos' feature
 ...suppressing further errors regarding Warning
-[Line 2573 Sent sherlock:sherlock08.vislcg.txt:5:145 Node 4]: [L3 Syntax rel-upos-mark] 'mark' should not be 'NOUN' word 'beriya'
-[Line 3561 Sent sherlock:sherlock12.vislcg.txt:3:37 Node 5]: [L3 Syntax rel-upos-advmod] 'advmod' should be 'ADV' but it is 'NOUN' word 'hela'
-[Line 3638 Sent sherlock:sherlock12.vislcg.txt:7:179 Node 1]: [L3 Syntax rel-upos-mark] 'mark' should not be 'NOUN' word 'Wextê'
-[Line 4234 Sent sherlock:sherlock14.vislcg.txt:7:188 Node 1]: [L3 Syntax rel-upos-mark] 'mark' should not be 'NOUN' word 'Wextê'
-[Line 8915 Sent wiki:wikibank.vislcg.txt:193:5274 Node 1]: [L3 Syntax rel-upos-advmod] 'advmod' should be 'ADV' but it is 'ADP' word 'Ji'
-[Line 8925 Sent wiki:wikibank.vislcg.txt:193:5274 Node 11]: [L3 Syntax rel-upos-advmod] 'advmod' should be 'ADV' but it is 'ADP' word 'li'
-[Line 9324 Sent wiki:wikibank.vislcg.txt:218:5946 Node 7]: [L3 Syntax rel-upos-advmod] 'advmod' should be 'ADV' but it is 'ADP' word 'li'
-[Line 9334 Sent wiki:wikibank.vislcg.txt:219:5969 Node 3]: [L3 Syntax rel-upos-advmod] 'advmod' should be 'ADV' but it is 'ADP' word 'li'
+[Line 2573 Sent sherlock:sherlock08.vislcg.txt:5:145]: [L3 Syntax rel-upos-mark] 'mark' should not be 'NOUN' ('beriya')
+[Line 3561 Sent sherlock:sherlock12.vislcg.txt:3:37]: [L3 Syntax rel-upos-advmod] 'advmod' should be 'ADV' but it is 'NOUN' ('hela')
+[Line 3638 Sent sherlock:sherlock12.vislcg.txt:7:179]: [L3 Syntax rel-upos-mark] 'mark' should not be 'NOUN' ('Wextê')
+[Line 4234 Sent sherlock:sherlock14.vislcg.txt:7:188]: [L3 Syntax rel-upos-mark] 'mark' should not be 'NOUN' ('Wextê')
+[Line 8915 Sent wiki:wikibank.vislcg.txt:193:5274]: [L3 Syntax rel-upos-advmod] 'advmod' should be 'ADV' but it is 'ADP' ('Ji')
+[Line 8925 Sent wiki:wikibank.vislcg.txt:193:5274]: [L3 Syntax rel-upos-advmod] 'advmod' should be 'ADV' but it is 'ADP' ('li')
+[Line 9324 Sent wiki:wikibank.vislcg.txt:218:5946]: [L3 Syntax rel-upos-advmod] 'advmod' should be 'ADV' but it is 'ADP' ('li')
+[Line 9334 Sent wiki:wikibank.vislcg.txt:219:5969]: [L3 Syntax rel-upos-advmod] 'advmod' should be 'ADV' but it is 'ADP' ('li')
 ...suppressing further errors regarding Syntax
 Syntax errors: 11
-Warnings: 199
+Warnings: 200
 *** FAILED *** with 11 errors
 Exit code: 1
-/net/work/people/zeman/unidep/tools/validate.py --lang kmr --max-err=10 UD_Kurmanji-MG/kmr_mg-ud-train.conllu
-[Line 4 Sent wiki:wikibank.vislcg.txt:396:10980 Node 2]: [L3 Warning fixed-without-extpos] Fixed expression 'dema ku' does not have the 'ExtPos' feature
-[Line 68 Sent wiki:wikibank.vislcg.txt:399:11095 Node 1]: [L3 Warning fixed-without-extpos] Fixed expression 'Li gorî' does not have the 'ExtPos' feature
-[Line 110 Sent wiki:wikibank.vislcg.txt:402:11156 Node 5]: [L3 Warning fixed-without-extpos] Fixed expression 'li ser' does not have the 'ExtPos' feature
-[Line 146 Sent wiki:wikibank.vislcg.txt:405:11221 Node 1]: [L3 Warning fixed-without-extpos] Fixed expression 'Li dijî' does not have the 'ExtPos' feature
-[Line 184 Sent wiki:wikibank.vislcg.txt:408:11282 Node 1]: [L3 Warning fixed-without-extpos] Fixed expression 'Ji ber' does not have the 'ExtPos' feature
+/net/work/people/zeman/unidep/tools/validate.py --lang kmr --max-err=10 UD_Northern_Kurdish-Kurmanji/kmr_kurmanji-ud-train.conllu
+[Line 4 Sent wiki:wikibank.vislcg.txt:396:10980]: [L3 Warning fixed-without-extpos] Fixed expression 'dema ku' does not have the 'ExtPos' feature
+[Line 68 Sent wiki:wikibank.vislcg.txt:399:11095]: [L3 Warning fixed-without-extpos] Fixed expression 'Li gorî' does not have the 'ExtPos' feature
+[Line 110 Sent wiki:wikibank.vislcg.txt:402:11156]: [L3 Warning fixed-without-extpos] Fixed expression 'li ser' does not have the 'ExtPos' feature
+[Line 146 Sent wiki:wikibank.vislcg.txt:405:11221]: [L3 Warning fixed-without-extpos] Fixed expression 'Li dijî' does not have the 'ExtPos' feature
+[Line 184 Sent wiki:wikibank.vislcg.txt:408:11282]: [L3 Warning fixed-without-extpos] Fixed expression 'Ji ber' does not have the 'ExtPos' feature
 Warnings: 5
 *** PASSED ***
 Validity: 0.01
-(weight=0.0769230769230769) * (score{features}=0.8) = 0.0615384615384615
-(weight=0.0769230769230769) * (score{genres}=0.111111111111111) = 0.00854700854700855
-(weight=0.0769230769230769) * (score{lemmas}=0.8) = 0.0615384615384615
-(weight=0.256410256410256) * (score{size}=0.33703500993866) = 0.0864192333176051
-(weight=0.0512820512820513) * (score{split}=0.34) = 0.0174358974358974
-(weight=0.0769230769230769) * (score{tags}=0.8) = 0.0615384615384615
-(weight=0.307692307692308) * (score{udapi}=0.996100984501413) = 0.30649261061582
-(weight=0.0769230769230769) * (score{udeprels}=0.810810810810811) = 0.0623700623700624
-(TOTAL score=0.665880196901778) * (availability=1) * (validity=0.01) = 0.00665880196901778
+(weight=0.111111111111111) * (score{features}=0.8) = 0.0888888888888889
+(weight=0.111111111111111) * (score{genres}=0.111111111111111) = 0.0123456790123457
+(weight=0.111111111111111) * (score{lemmas}=0.8) = 0.0888888888888889
+(weight=0.37037037037037) * (score{size}=0.33703500993866) = 0.124827781458763
+(weight=0.0740740740740741) * (score{split}=0.34) = 0.0251851851851852
+(weight=0.111111111111111) * (score{tags}=0.8) = 0.0888888888888889
+(weight=0.111111111111111) * (score{udeprels}=0.810810810810811) = 0.0900900900900901
+(TOTAL score=0.519115402413051) * (availability=1) * (validity=0.01) = 0.00519115402413051
 STARS = 0
-UD_Kurmanji-MG	0.00665880196901778	0
+UD_Northern_Kurdish-Kurmanji	0.00519115402413051	0
