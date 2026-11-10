@@ -1197,7 +1197,7 @@
 # sent_id = sherlock:sherlock03.vislcg.txt:14:373
 # text = Di wê şeva çift de zirbavê me zûka vekişiya oda xwe û derî li xwe girt.
 1	Di	di	ADP	pr	AdpType=Prep	3	case	_	_
-2	wê	ew	DET	det	Case=Acc|Gender=Fem|Number=Sing|PronType=Dem	3	obl	_	_
+2	wê	ew	DET	det	Case=Acc|Gender=Fem|Number=Sing|PronType=Dem	3	nmod	_	_
 3	şeva	şev	NOUN	n	Case=Con|Definite=Def|Gender=Fem|Number=Sing	9	nmod	_	_
 4	çift	çift	ADJ	adj	Degree=Pos	3	amod	_	_
 5	de	de	ADP	post	AdpType=Post	3	case	_	_
