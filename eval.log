@@ -1,11 +1,11 @@
 Running the following version of UD tools:
-commit b39dc4111bb13658bc0c204b48bb78b492e45d2b
+commit 59781c63b5b1c2ba74cd2b965d93f371e1c9d36a
 Author: Dan Zeman <zeman@ufal.mff.cuni.cz>
-Date:   Tue May 5 17:01:41 2026 +0200
+Date:   Tue Nov 10 13:08:27 2026 +0100
 Evaluating the following revision of UD_Northern_Kurdish-Kurmanji:
-commit b2fa1f4d267448a21a1634ef6af97bd05762122c
+commit 389c4771d00c6a4fccd9e89704edc4b29bd7b4ac
+Merge: e1e3021 b204f79
 Author: Dan Zeman <zeman@ufal.mff.cuni.cz>
-Date:   Tue Nov 11 20:18:53 2025 +0100
 CoNLL-U data file regular expression = '(.+)-ud-(train|dev|test)\.conllu'
 Language-treebank code (from CoNLL-U file name) = 'kmr_kurmanji'
 Language code (from CoNLL-U file name) = 'kmr'
@@ -38,7 +38,6 @@ Genres: found 2 out of 18 known.
 [Line 543 Sent sherlock:sherlock02.vislcg.txt:3:49]: [L3 WARNING fixed-without-extpos] Fixed expression 'ji bîr' does not have the 'ExtPos' feature
 [Line 678 Sent sherlock:sherlock02.vislcg.txt:12:309]: [L3 WARNING fixed-without-extpos] Fixed expression 'di bin' does not have the 'ExtPos' feature
 ...suppressing further messages regarding WARNING/SYNTAX
-[Line 1200 Sent sherlock:sherlock03.vislcg.txt:14:373]: [L3 SYNTAX obl-should-be-nmod] The parent (node [3] 'şeva') is a nominal (and not a predicate), hence the relation should be 'nmod', not 'obl'.
 [Line 2573 Sent sherlock:sherlock08.vislcg.txt:5:145]: [L3 SYNTAX rel-upos-mark] 'mark' should not be 'NOUN' ('beriya')
 [Line 3561 Sent sherlock:sherlock12.vislcg.txt:3:37]: [L3 SYNTAX rel-upos-advmod] 'advmod' should be 'ADV' but it is 'NOUN' ('hela')
 [Line 3638 Sent sherlock:sherlock12.vislcg.txt:7:179]: [L3 SYNTAX rel-upos-mark] 'mark' should not be 'NOUN' ('Wextê')
@@ -46,10 +45,11 @@ Genres: found 2 out of 18 known.
 [Line 8915 Sent wiki:wikibank.vislcg.txt:193:5274]: [L3 SYNTAX rel-upos-advmod] 'advmod' should be 'ADV' but it is 'ADP' ('Ji')
 [Line 8925 Sent wiki:wikibank.vislcg.txt:193:5274]: [L3 SYNTAX rel-upos-advmod] 'advmod' should be 'ADV' but it is 'ADP' ('li')
 [Line 9324 Sent wiki:wikibank.vislcg.txt:218:5946]: [L3 SYNTAX rel-upos-advmod] 'advmod' should be 'ADV' but it is 'ADP' ('li')
+[Line 9334 Sent wiki:wikibank.vislcg.txt:219:5969]: [L3 SYNTAX rel-upos-advmod] 'advmod' should be 'ADV' but it is 'ADP' ('li')
 ...suppressing further messages regarding ERROR/SYNTAX
 Warnings: 199
-SYNTAX errors: 12
-*** FAILED *** with 12 errors
+SYNTAX errors: 11
+*** FAILED *** with 11 errors
 Exit code: 1
 /net/work/people/zeman/unidep/tools/validate.py --lang kmr --max-err=10 UD_Northern_Kurdish-Kurmanji/kmr_kurmanji-ud-train.conllu
 [Line 4 Sent wiki:wikibank.vislcg.txt:396:10980]: [L3 WARNING fixed-without-extpos] Fixed expression 'dema ku' does not have the 'ExtPos' feature
